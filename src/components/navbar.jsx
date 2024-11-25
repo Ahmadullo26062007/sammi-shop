@@ -10,8 +10,10 @@ const Navbar = () => {
 
       <div className="flex items-center space-x-2.5 text-sm">
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-gray-900">Home page</a>
-          <a className="mr-5 hover:text-gray-900">All products</a> 
+          <Link href={"/"} className="mr-5 hover:text-gray-900">Home page</Link>
+          <Link href={"/products"} className="mr-5 hover:text-gray-900">
+            All products
+          </Link>
         </nav>
         <button className="button bg-blue-600 text-white border-transparent hover:border-blue-600 hover:bg-transparent hover:text-black">
           Log in
